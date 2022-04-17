@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap');
+
+:root {
+    --clr-cyan: #0E8784;
+    --clr-grey-blue: #333D4B;
+    --clr-orange: #FDD6BA;
+    --clr-light: #FEFCF7;
+    --clr-grey: #83888F;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    background: #F2F2F2;
+    padding: 0 1rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-container:first-child {
+    height: 18px;
+}
+
+.header-container:nth-child(2) {
+    height: 15px;
+}
+
+.navigation-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+li {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+a {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--clr-grey-blue);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+    line-height: 32px;
+}
