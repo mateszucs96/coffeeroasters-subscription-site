@@ -23,68 +23,7 @@ body {
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     line-height: 26px;
-
-    padding: 0 1rem;
 }
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
-}
-
-.header-container:first-child {
-    height: 18px;
-}
-
-.header-container:nth-child(2) {
-    height: 15px;
-}
-
-.navigation-menu {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
-
-}
-
-.header-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-image: url('./assets/home/mobile/image-hero-coffeepress.jpg');
-    color: var(--clr-light);
-    padding: 100px 24px;
-    border-radius: 10px;
-}
-
-.header-section>h2 {
-    margin-bottom: 24px
-}
-
-.header-section>p {
-    opacity: 0.8;
-    margin-bottom: 40px;
-}
-
-.collection-section {
-    display: grid;
-    grid-template-columns: 1fr;
-
-}
-
-.collection-section>h2 {
-    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
-    opacity: 0.1;
-
-}
-
-
-
-
-
 
 li {
     list-style: none;
@@ -136,4 +75,106 @@ button {
     width: 217px;
     border-radius: 6px;
     border: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+.header-container:first-child {
+    height: 18px;
+}
+
+.header-container:nth-child(2) {
+    height: 15px;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+
+    position: absolute;
+    width: 100%;
+    top: 5.65rem;
+    padding: 3rem 0;
+    margin: 0 -1rem;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url('./assets/home/mobile/image-hero-coffeepress.jpg');
+    color: var(--clr-light);
+    padding: 100px 24px;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.header-section>h2 {
+    margin-bottom: 24px
+}
+
+.header-section>p {
+    opacity: 0.8;
+    margin-bottom: 40px;
+}
+
+.collection-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 7.5rem;
+
+}
+
+.collection-section>h2 {
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    opacity: 0.1;
+}
+
+.commercial-section {
+    margin: 0 1rem;
+    background-color: #2C343E;
+    border-radius: 10px;
+}
+
+.commercial-section>header>h4 {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 28px;
+    color: var(--clr-light);
+}
+
+.commercial-card {
+    background-color: var(--clr-cyan);
+    border-radius: 10px;
+    padding-top: 4rem;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.commercial-card>img {
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+.content-description {
+    width: 255px;
+    height: 134px;
+    padding: 0 1.5rem;
+    text-align: center;
+    margin-bottom: 3.3rem;
+}
+
+.content-description>h4 {
+    color: var(--clr-light);
 }
