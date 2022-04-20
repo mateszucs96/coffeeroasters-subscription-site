@@ -11,23 +11,25 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-}
-
-* {
     margin: 0;
     padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
     font-family: 'Barlow', sans-serif;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    box-sizing: border-box;
 }
 
 li {
     list-style: none;
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
 }
 
 a {
@@ -35,62 +37,62 @@ a {
     font-style: normal;
     text-decoration: none;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
     color: var(--clr-grey-blue);
 }
 
 h1 {
     font-family: 'Fraunces', serif;
-    font-size: 72px;
-    line-height: 72px;
+    font-size: 7.2rem;
+    line-height: 7.2rem;
 }
 
 h2 {
     font-family: 'Fraunces', serif;
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 4rem;
+    line-height: 4.8rem;
 }
 
 h3 {
     font-family: 'Fraunces', serif;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
 }
 
 h4 {
     font-family: 'Fraunces', serif;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
 }
 
 button {
     background-color: var(--clr-cyan);
     font-family: 'Fraunces', serif;
     font-weight: 900;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
     color: var(--clr-light);
-    height: 56px;
-    width: 217px;
-    border-radius: 6px;
+    height: 5.6rem;
+    width: 21.75rem;
+    border-radius: .6rem;
     border: none;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
-    margin-top: 2rem;
-    padding: 0 1rem;
+    margin-bottom: 4rem;
+    margin-top: 3.2rem;
+    padding: 0 1.6rem;
 }
 
 .header-container:first-child {
-    height: 18px;
+    height: 1.75rem;
 }
 
 .header-container:nth-child(2) {
-    height: 15px;
+    height: 1.5rem;
 }
 
 .navigation-menu {
@@ -101,9 +103,9 @@ button {
 
     position: absolute;
     width: 100%;
-    top: 5.65rem;
-    padding: 3rem 0;
-    margin: 0 -1rem;
+    top: 9rem;
+    padding: 4.8rem 0;
+
 }
 
 .header-section {
@@ -113,24 +115,24 @@ button {
     text-align: center;
     background-image: url('./assets/home/mobile/image-hero-coffeepress.jpg');
     color: var(--clr-light);
-    padding: 100px 24px;
-    border-radius: 10px;
-    margin: 0 1rem;
+    padding: 10rem 2.4rem;
+    border-radius: 1rem;
+    margin: 0 1.6rem;
 }
 
 .header-section>h2 {
-    margin-bottom: 24px
+    margin-bottom: 2.4rem
 }
 
 .header-section>p {
     opacity: 0.8;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .collection-section {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 7.5rem;
+    margin-top: 12rem;
 
 }
 
@@ -140,39 +142,39 @@ button {
 }
 
 .commercial-section {
-    margin: 0 1rem;
+    margin: 0 1.6rem;
     background-color: #2C343E;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 .commercial-section>header>h4 {
     font-weight: 900;
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
     color: var(--clr-light);
 }
 
 .commercial-card {
     background-color: var(--clr-cyan);
-    border-radius: 10px;
-    padding-top: 4rem;
+    border-radius: 1rem;
+    padding-top: 6.4rem;
     display: grid;
     justify-content: center;
     width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.4rem;
 }
 
 .commercial-card>img {
     margin: 0 auto;
-    margin-bottom: 3.5rem;
+    margin-bottom: 5.6rem;
 }
 
 .content-description {
-    width: 255px;
-    height: 134px;
-    padding: 0 1.5rem;
+    width: 25.5rem;
+    height: 13.5rem;
+    padding: 0 2.4rem;
     text-align: center;
-    margin-bottom: 3.3rem;
+    margin-bottom: 5.25rem;
 }
 
 .content-description>h4 {
