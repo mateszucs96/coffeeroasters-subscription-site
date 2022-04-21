@@ -1,5 +1,5 @@
 class App {
-    hamburger = document.querySelector('.open-menu');
+    hamburger = document.querySelector('.hamburger');
     navMenu = document.querySelector('.navigation-menu');
     constructor() {
         this.hamburger.addEventListener('click', this.openMenu)

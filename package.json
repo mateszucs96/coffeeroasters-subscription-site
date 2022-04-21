@@ -1,0 +1,22 @@
+{
+  "name": "cofferoasters",
+  "version": "1.0.0",
+  "description": "cofferoasters site with subscription",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss src/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateszucs96/coffeeroasters-subscription-site.git"
+  },
+  "author": "Matthew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mateszucs96/coffeeroasters-subscription-site/issues"
+  },
+  "homepage": "https://github.com/mateszucs96/coffeeroasters-subscription-site#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
