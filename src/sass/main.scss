@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap');
 
 
+//colors
 $clr-cyan: #0E8784;
 $clr-grey-blue: #333D4B;
 $clr-orange: #FDD6BA;
 $clr-light: #FEFCF7;
 $clr-grey: #83888F;
 
+//fonts 
 $fs-900: clamp(40px, calc(31px + 2.3vw), 72px);
 
 *,
