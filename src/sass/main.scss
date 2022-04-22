@@ -9,7 +9,8 @@ $clr-light: #FEFCF7;
 $clr-grey: #83888F;
 
 //fonts 
-$fs-900: clamp(40px, calc(31px + 2.3vw), 72px);
+$fs-900: clamp(40px, calc(29px + 2.9vw), 72px);
+$fs-700: clamp(28px, calc(20px + 1.5vw), 40px);
 
 *,
 *::before,
@@ -54,8 +55,8 @@ h1 {
 
 h2 {
     font-family: 'Fraunces', serif;
-    font-size: 4rem;
-    line-height: 4.8rem;
+    font-size: $fs-700;
+    // line-height: clamp(28px, calc(28px + 2.6vw), 48px)
 }
 
 h3 {
@@ -179,7 +180,8 @@ h4 {
     display: grid;
     grid-template-rows: repeat(8, 1fr);
     gap: 1.5rem;
-    padding: 0 2.4rem;
+    width: 89%;
+    margin: 0 auto;
 
 
 
@@ -197,14 +199,11 @@ h4 {
 
         .wrapper__header {
             padding: 3.2rem 2.4rem;
-
-            text-align: center;
+            margin: 5rem auto;
         }
 
         .wrapper__header--heading {
             font-weight: 900;
-            font-size: 2.8rem;
-            line-height: 2.8rem;
             color: $clr-light;
             margin-bottom: 2.4rem;
         }
@@ -265,11 +264,98 @@ h4 {
     color: $clr-light;
 }
 
+.details-section {
+    width: 89%;
+    margin: 12rem auto;
+    text-align: center;
+
+    .details-header {
+        color: $clr-grey;
+        margin-bottom: 8rem;
+
+        &__title {
+            font-size: 2.4rem;
+            line-height: 3.2rem;
+        }
+    }
+
+    .details-main {
+        display: flex;
+        flex-direction: column;
+        gap: 5.6rem;
+
+        &__content>*:not(:last-child) {
+            margin-bottom: 2.4rem;
+        }
+    }
+
+    .btn {
+        margin-top: 7.9rem;
+        margin-bottom: 0;
+        width: 21.75rem
+    }
+}
+
+.details-main__content {
+    &__number {
+        color: $clr-orange;
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+    }
+
+    &__title {
+        color: $clr-grey-blue;
+        font-size: 2.8rem;
+    }
+
+    &__description {
+        color: $clr-grey-blue;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2C343E;
+    margin: 0 auto;
+    width: 89%;
+    padding: 5.4rem;
+    gap: 4.8rem;
+
+    .footer__nav>.nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-around;
+        width: 12rem;
+    }
+}
+
+.nav__link {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    font-size: 15px;
+    color: $clr-grey;
+}
+
+.footer__logo {
+    height: 100%;
+    width: 100%;
+    fill: red;
+}
+
+.footer__logo--logo {
+    fill: red;
+}
+
 
 @media screen and (min-width: 700px) {
-    html {
-        font-size: 100%;
-    }
 
     .collection-section .collection {
         flex-direction: row;
