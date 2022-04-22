@@ -34,7 +34,7 @@ body {
 
 li {
     list-style: none;
-    margin-bottom: 3.2rem;
+
 }
 
 a {
@@ -123,6 +123,10 @@ h4 {
         width: 100%;
         top: 9rem;
         padding: 4.8rem 0;
+
+        .header__nav {
+            margin-bottom: 3.2rem;
+        }
 
     }
 
@@ -327,6 +331,7 @@ h4 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2.4rem;
     }
 
     &__icons {

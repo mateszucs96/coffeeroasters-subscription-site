@@ -17,8 +17,7 @@ body {
   background-color: #FEFCF7; }
 
 li {
-  list-style: none;
-  margin-bottom: 3.2rem; }
+  list-style: none; }
 
 a {
   font-family: 'Fraunces', serif;
@@ -90,6 +89,8 @@ h4 {
     width: 100%;
     top: 9rem;
     padding: 4.8rem 0; }
+    .header-section .navigation-menu .header__nav {
+      margin-bottom: 3.2rem; }
   .header-section .heading-primary {
     margin: 2.4rem 0; }
     .header-section .heading-primary-main {
@@ -214,7 +215,8 @@ h4 {
   .footer .footer__nav > .nav__list {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    gap: 2.4rem; }
   .footer__icons {
     display: flex;
     justify-content: space-around;
