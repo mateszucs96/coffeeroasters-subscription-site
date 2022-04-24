@@ -47,6 +47,9 @@ h4 {
   font-size: 2.4rem;
   line-height: 3.2rem; }
 
+p {
+  opacity: 0.8; }
+
 .btn {
   background-color: #0E8784;
   font-family: 'Fraunces', serif;
@@ -236,6 +239,59 @@ h4 {
 
 .footer__logo--logo {
   fill: red; }
+
+.navigation-menu {
+  display: none; }
+
+.about-header-section {
+  background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+  background-size: cover;
+  background-position: top;
+  width: 89%;
+  border-radius: 10px;
+  margin: 0 auto; }
+
+.about-heading {
+  color: #FEFCF7;
+  padding: 11rem 2.4rem 8.7rem 2.4rem;
+  text-align: center; }
+  .about-heading__title {
+    font-size: clamp(28px, calc(20px + 1.5vw), 40px);
+    line-height: clamp(28px, calc(20px + 1.5vw), 48px);
+    margin-bottom: 2.4rem; }
+  .about-heading__content {
+    opacity: 0.8; }
+
+.about-commitment-section {
+  width: 89%;
+  margin: 0 auto; }
+  .about-commitment-section .about-commitment__header img {
+    border-radius: 10px;
+    height: 40rem; }
+  .about-commitment-section .about-commitment__content {
+    text-align: center;
+    color: #333D4B; }
+
+.about-quality-section {
+  display: grid;
+  grid-template-rows: 100px 100px 1fr;
+  max-width: 89%;
+  margin: 0 auto;
+  overflow: hidden; }
+  .about-quality-section .about-quality__heading,
+  .about-quality-section .about-quality__content {
+    grid-column: 1; }
+  .about-quality-section .about-quality__content {
+    background-color: #2C343E;
+    text-align: center;
+    grid-row: 2 / span 2;
+    padding: 14rem 2.4rem 6rem 2.4rem; }
+  .about-quality-section .about-quality__heading {
+    max-width: 75%;
+    z-index: 10;
+    grid-row: 1/ span 2; }
+    .about-quality-section .about-quality__heading img {
+      max-width: 100%; }
 
 @media screen and (min-width: 700px) {
   .collection-section .collection {
