@@ -3,34 +3,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
 </head>
 
 <body>
-  Home
-  About us
-  Create your plan
+  <header class="header">
+    <div class="logo-box">
+      <img class="logo" src="./assets/shared/desktop/logo.svg" alt="logo">
+    </div>
+    <div class="hamburger-box">
+      <img class="hamburger" src="./assets/shared/mobile/icon-hamburger.svg" alt="hamburger menu">
+    </div>
+  </header>
 
-  Create a plan
-  Build a subscription plan that best fits your needs. We offer an assortment of the best 
-  artisan coffees from around the globe delivered fresh to your door.
+  <section class="plan-header-section">
+    <ul class="navigation-menu">
+      <li class="header__nav">
+        <a href="./index.html">Home</a>
+      </li>
+      <li>
+        <a href="./about.html">About us</a>
+      </li>
+      <li>
+        <a href="./plan.html">Create your plan</a>
+      </li>
+    </ul>
+    <div class="plan-heading">
+      <h1 class="plan-heading__title">
+        Create a plan
+      </h1>
+      <p class="plan-heading__content">
+        Build a subscription plan that best fits your needs. We offer an assortment of the best
+        artisan coffees from around the globe delivered fresh to your door.
+      </p>
+    </div>
+  </section>
 
-  01
-  Pick your coffee
-  Select from our evolving range of artisan coffees. Our beans are ethically
-  sourced and we pay fair prices for them. There's new coffees in all profiles
-  every month for you to try out.
-  
-  02
-  Choose the frequency
-  Customize your order frequency, quantity, even your roast style and grind type.
-  Pause, skip or cancel your subscription with no commitment through our online portal.
-  
-  03
-  Receive and enjoy!
-  We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
-  world-class coffees curated to provide a distinct tasting experience.
+  <section class="details-section plan-details">
+    <div class="details-main">
+
+      <div class="details-main__content">
+        <h3 class="details-main__content__number">
+          01
+        </h3>
+        <h4 class="details-main__content__title">
+          Pick your coffee
+        </h4>
+        <p class="details-main__content__description">
+          Select from our evolving range of artisan coffees. Our beans are ethically
+          sourced and we pay fair prices for them. There are new coffees in all profiles
+          every month for you to try out.
+        </p>
+      </div>
+
+      <div class="details-main__content">
+        <h3 class="details-main__content__number">
+          02
+        </h3>
+        <h4 class="details-main__content__title">
+          Choose the frequency
+        </h4>
+        <p class="details-main__content__description">
+          Customize your order frequency, quantity, even your roast style and grind type.
+          Pause, skip or cancel your subscription with no commitment through our online portal.
+        </p>
+      </div>
+
+      <div class="details-main__content">
+        <h3 class="details-main__content__number">
+          03
+        </h3>
+        <h4 class="details-main__content__title">
+          Receive and enjoy!
+        </h4>
+        <p class="details-main__content__description">
+          We ship your package within 48 hours, freshly roasted. Sit back and enjoy award-winning
+          world-class coffees curated to provide a distinct tasting experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
 
   01 Preferences
   02 Bean type
@@ -63,7 +117,7 @@
   How much would you like?
   250g
   Perfect for the solo drinker. Yields about 12 delicious cups.
-  
+
   500g
   Perfect option for a couple. Yields about 40 delectable cups.
 
@@ -93,7 +147,7 @@
   $22.50 per shipment. Includes free priority shipping.
 
   Order Summary
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____, 
+  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
   sent to me _____.”
 
   Create my plan!
@@ -104,7 +158,7 @@
   “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
   sent to me _____.”
 
-  Is this correct? You can proceed to checkout or go back to plan selection if something 
+  Is this correct? You can proceed to checkout or go back to plan selection if something
   is off. Subscription discount codes can also be redeemed at the checkout.
 
   $_____/month
