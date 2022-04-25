@@ -1,0 +1,78 @@
+//colors
+$clr-cyan: #0E8784;
+$clr-grey-blue: #333D4B;
+$clr-orange: #FDD6BA;
+$clr-light: #FEFCF7;
+$clr-grey: #83888F;
+
+//fonts 
+$fs-900: clamp(40px, calc(29px + 2.9vw), 72px);
+$fs-700: clamp(28px, calc(20px + 1.5vw), 40px);
+$fs-800: clamp(28px, calc(20px + 1.5vw), 48px);
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    background-color: $clr-light;
+
+}
+
+
+
+li {
+    list-style: none;
+
+}
+
+a {
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: $clr-grey-blue;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: $fs-900;
+    line-height: $fs-900;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-size: $fs-700;
+    line-height: clamp(28px, calc(28px + 2.6vw), 48px)
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+
+h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+p {
+    opacity: 0.8;
+}
