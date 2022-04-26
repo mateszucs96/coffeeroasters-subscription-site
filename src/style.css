@@ -386,7 +386,6 @@ p {
         opacity: 1; }
 
 .summary-section {
-  width: 89%;
   margin: 12rem auto;
   display: flex;
   flex-direction: column;
