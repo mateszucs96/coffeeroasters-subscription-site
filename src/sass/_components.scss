@@ -5,12 +5,29 @@
     background: linear-gradient(180deg, #FEFCF7 32%, rgba(254, 252, 247, 0.504981) 100%);
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 9rem;
     padding: 4.8rem 0;
     gap: 3.2rem;
     z-index: 10;
+    animation: rollDown 300ms ease-in;
+}
 
+@keyframes rollDown {
+    0% {
+        opacity: 0.1;
+        height: 1px;
+    }
+
+    50% {
+        transform: translateY(-3rem);
+    }
+
+    100% {
+        opacity: 1;
+        height: 100%;
+        transform: translateY(0);
+    }
 }
 
 .btn {

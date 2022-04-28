@@ -313,18 +313,20 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 3.2rem; }
+    margin-bottom: 3.2rem;
+    cursor: pointer; }
     .accordion-section .accordion__header .question {
-      flex-basis: 70%;
       color: #83888F;
       font-size: clamp(24px, calc(18px + 1.6vw), 40px);
-      line-height: clamp(28px, calc(20px + 1.5vw), 48px); }
-    .accordion-section .accordion__header img {
+      line-height: clamp(28px, calc(20px + 1.5vw), 48px);
+      padding-right: 5rem; }
+    .accordion-section .accordion__header .icon-arrow {
       width: 1.8rem;
-      height: 1.2rem;
+      height: 1.2rem; }
+    .accordion-section .accordion__header .rotate {
       transform: rotate(180deg); }
   .accordion-section .answers {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1.6rem; }
     .accordion-section .answers .answer {
@@ -333,9 +335,13 @@ p {
       border-radius: .8rem; }
       .accordion-section .answers .answer .answer--main {
         color: #333D4B;
-        margin-bottom: .8rem; }
+        margin-bottom: .8rem;
+        pointer-events: none; }
       .accordion-section .answers .answer .answer--secondary {
-        opacity: 1; }
+        opacity: 1;
+        pointer-events: none; }
+    .accordion-section .answers .answer:hover {
+      background-color: #FDD6BA; }
 
 .summary-section {
   margin: 12rem auto;
@@ -356,6 +362,8 @@ p {
     .summary-section .summary .summary--content {
       line-height: 4rem;
       color: #ffffff; }
+      .summary-section .summary .summary--content .placeholders {
+        color: #0E8784; }
   .summary-section .btn {
     max-width: 21.7rem;
     margin: 0 auto; }
@@ -367,11 +375,23 @@ p {
   background: linear-gradient(180deg, #FEFCF7 32%, rgba(254, 252, 247, 0.504981) 100%);
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 9rem;
   padding: 4.8rem 0;
   gap: 3.2rem;
-  z-index: 10; }
+  z-index: 10;
+  animation: rollDown 300ms ease-in; }
+
+@keyframes rollDown {
+  0% {
+    opacity: 0.1;
+    height: 1px; }
+  50% {
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    height: 100%;
+    transform: translateY(0); } }
 
 .btn {
   background-color: #0E8784;
