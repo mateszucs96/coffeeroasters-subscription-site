@@ -23,7 +23,8 @@ class App {
     accordionHeader = document.querySelectorAll('.accordion__header');
     answers = document.querySelectorAll('.answers');
     summaryContent = document.querySelector('.summary--content');
-    placesholders = document.querySelectorAll('.placeholders')
+    placesholders = document.querySelectorAll('.placeholders');
+    how = document.querySelector('.how');
 
     constructor() {
         this.hamburger.addEventListener('click', this.openMenu.bind(this))
@@ -43,6 +44,18 @@ class App {
             el.textContent = arr[i];
 
         });
+        if (arr[0] === 'Capsule') {
+            this.how.textContent = 'using';
+            this.accordionHeader[3].children[0].style.color = '#C1C3C7';
+            this.accordionHeader[3].removeEventListener('click', this.handleAccordion);
+
+        }
+        if (arr[0] === 'Filter' || arr[0] === 'Espresso') {
+            this.accordionHeader[3].addEventListener('click', this.handleAccordion)
+            this.accordionHeader[3].children[0].style.color = '#83888F';
+            this.how.textContent = 'as';
+        }
+
     };
 
     handleAnswers(e) {
