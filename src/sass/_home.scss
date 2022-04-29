@@ -12,6 +12,27 @@
 
     .hamburger-box {
         height: 1.5rem;
+
+        @media only screen and (min-width: 760px) {
+            display: none;
+        }
+    }
+
+    &__nav {
+        display: none;
+
+        .nav__list {
+            @media only screen and (min-width: 760px) {
+                display: flex;
+                flex-direction: row;
+                gap: 3.3rem;
+            }
+        }
+
+        @media only screen and (min-width: 760px) {
+            display: flex;
+
+        }
     }
 }
 
@@ -21,14 +42,27 @@
     align-items: center;
     text-align: center;
     background-image: url('./assets/home/mobile/image-hero-coffeepress.jpg');
-
+    background-size: cover;
+    background-repeat: no-repeat;
     color: $clr-light;
-    padding: 10rem 2.4rem;
+    padding: 10rem 8%;
     border-radius: 1rem;
     margin: 0 1.6rem;
 
+
+    @media only screen and (min-width:760px) {
+        background-image: url('../assets/home/tablet/image-hero-coffeepress.jpg');
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    @media only screen and (min-width:1200px) {
+        background-image: url('../assets/home/desktop/image-hero-coffeepress.jpg');
+    }
+
     .heading-primary {
         margin: 2.4rem 0;
+        max-width: 50rem;
 
         &-main {
             display: block;
@@ -42,6 +76,7 @@
     &__description {
         opacity: 0.8;
         margin-bottom: 4rem;
+        max-width: 50rem;
     }
 }
 
@@ -50,11 +85,51 @@
 
     margin-top: 12rem;
 
+    @media only screen and (min-width: 760px) {}
+
+
+
     &__heading {
-        background-image: linear-gradient(180deg, rgba(254, 252, 247, 0.001) 0%, $clr-light 100%);
+
+        background: linear-gradient(180deg, rgba(49, 49, 48, 0.9), #fefcf7);
+        // background: linear-gradient(180deg, red, blue);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
         text-align: center;
-        color: #979797;
         margin-bottom: 1.3rem;
+        font-size: 4rem;
+        line-height: 15rem;
+
+        @media only screen and (min-width: 760px) {
+
+            font-size: 9.6rem;
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+            font-size: 15rem;
+        }
+    }
+
+    &__collections {
+        @media only screen and (min-width: 760px) {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            margin-top: -5em;
+        }
+
+        @media only screen and (min-width: 1200px) {
+
+            flex-direction: row;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+
+
     }
 
     .collection {
@@ -62,6 +137,18 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: 4.8rem;
+
+        // @media only screen and (min-width: 1200px) {
+        //     display: flex;
+        //     flex-direction: column;
+
+        // }
+
+        @media only screen and (min-width: 760px) and (max-width: 1200px) {
+            flex-direction: row;
+            justify-content: center;
+            margin: 0 auto;
+        }
 
         &__description {
             max-width: 28rem;
@@ -80,11 +167,16 @@
 .commercial-section {
     display: grid;
     grid-template-rows: repeat(8, 1fr);
+
     gap: 1.5rem;
     width: 89%;
     margin: 0 auto;
 
-
+    @media only screen and (min-width: 1200px) {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
 
     &__wrapper,
     .commercial-card {
@@ -93,14 +185,28 @@
 
     }
 
+    .commercial-card {
+        max-width: 80%;
+    }
+
     &__wrapper {
         background-color: #2C343E;
         border-radius: 1rem;
         grid-row: 1 / 6;
 
+
+        width: 100%;
+
+        @media only screen and (min-width: 1200px) {
+            grid-row: 1 / 4;
+            grid-column: 1 / 4;
+        }
+
         .wrapper__header {
             padding: 3.2rem 2.4rem;
             margin: 5rem auto;
+            text-align: center;
+            max-width: 54rem;
         }
 
         .wrapper__header--heading {
@@ -115,23 +221,47 @@
         }
     }
 
-    .commercial-card {
-        max-width: 80%;
-    }
-
 
 
     .coffee-bean {
         grid-row: 3/ span 2;
 
+
+        @media only screen and (min-width: 1200px) {
+            grid-column: 1;
+
+            grid-row: 3 / span 2;
+
+
+            margin-top: -5rem;
+        }
     }
 
     .gift {
         grid-row: 5/ span 2;
+
+
+        @media only screen and (min-width: 1200px) {
+            grid-column: 2;
+
+            grid-row: 3/ span 2;
+
+            margin-top: -5rem;
+        }
     }
 
     .truck {
         grid-row: 7 / span 2;
+
+
+        @media only screen and (min-width: 1200px) {
+            grid-row: 3 / span 2;
+            grid-column: 3;
+
+
+
+            margin-top: -5rem;
+        }
     }
 }
 
@@ -170,6 +300,15 @@
     margin: 12rem auto;
     text-align: center;
 
+    @media only screen and (min-width: 760px) {}
+
+    @media only screen and (min-width: 1200px) {
+        max-width: 80%;
+
+    }
+
+
+
     .details-header {
         color: $clr-grey;
         margin-bottom: 8rem;
@@ -184,6 +323,24 @@
         display: flex;
         flex-direction: column;
         gap: 5.6rem;
+        align-items: center;
+        text-align: center;
+
+        @media only screen and (min-width: 760px) {
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: center;
+            align-items: stretch;
+            text-align: start;
+        }
+
+        @media only screen and (min-width: 1200px) {
+            gap: 9rem;
+        }
+
+        &__content {
+            max-width: 28rem;
+        }
 
         &__content>*:not(:last-child) {
             margin-bottom: 2.4rem;
@@ -193,7 +350,8 @@
     .btn {
         margin-top: 7.9rem;
         margin-bottom: 0;
-        width: 21.75rem
+        width: 21.75rem;
+        text-align: center;
     }
 }
 
@@ -207,6 +365,7 @@
     &__title {
         color: $clr-grey-blue;
         font-size: 2.8rem;
+        margin-right: 6rem;
     }
 
     &__description {
