@@ -31,13 +31,28 @@
 .about-commitment-section {
     width: 89%;
     margin: 0 auto;
+    max-width: 111rem;
+
+    @media only screen and (min-width:$mq-md) {
+        display: flex;
+        justify-content: space-between;
+        gap: 6.9rem;
+    }
 
     .about-commitment__header {
+
+
         img {
             border-radius: 10px;
             // height: 40rem;
             width: 100%;
             margin-bottom: 4.8rem;
+            height: 100%;
+        }
+
+        @media only screen and (min-width:$mq-md) {
+            flex-basis: 40%;
+
         }
     }
 
@@ -48,6 +63,11 @@
     .about-commitment__content {
         text-align: center;
         color: $clr-grey-blue;
+
+        @media only screen and (min-width:$mq-md) {
+            flex-basis: 60%;
+            align-self: center;
+        }
     }
 }
 
@@ -58,6 +78,7 @@
     margin: 12rem auto;
     overflow: hidden;
     border-radius: 10px;
+
 
     .about-quality__heading,
     .about-quality__content {
@@ -112,6 +133,19 @@
     margin: 0 auto;
     margin-bottom: 12rem;
     text-align: center;
+    max-width: 104.5rem;
+
+    @media only screen and (min-width: $mq-md) {
+        align-items: flex-start;
+        text-align: start;
+    }
+
+    .about-headquarters {
+        @media only screen and (min-width: $mq-md) {
+            display: flex;
+            gap: 8rem;
+        }
+    }
 
     .about-headquarters__title {
         color: $clr-grey;

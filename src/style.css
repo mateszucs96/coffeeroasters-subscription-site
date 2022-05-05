@@ -308,16 +308,30 @@ p {
 
 .about-commitment-section {
   width: 89%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 111rem; }
+  @media only screen and (min-width: 760px) {
+    .about-commitment-section {
+      display: flex;
+      justify-content: space-between;
+      gap: 6.9rem; } }
   .about-commitment-section .about-commitment__header img {
     border-radius: 10px;
     width: 100%;
-    margin-bottom: 4.8rem; }
+    margin-bottom: 4.8rem;
+    height: 100%; }
+  @media only screen and (min-width: 760px) {
+    .about-commitment-section .about-commitment__header {
+      flex-basis: 40%; } }
   .about-commitment-section .about-commitment__title {
     margin-bottom: 3rem; }
   .about-commitment-section .about-commitment__content {
     text-align: center;
     color: #333D4B; }
+    @media only screen and (min-width: 760px) {
+      .about-commitment-section .about-commitment__content {
+        flex-basis: 60%;
+        align-self: center; } }
 
 .about-quality-section {
   display: grid;
@@ -361,7 +375,16 @@ p {
   width: 89%;
   margin: 0 auto;
   margin-bottom: 12rem;
-  text-align: center; }
+  text-align: center;
+  max-width: 104.5rem; }
+  @media only screen and (min-width: 760px) {
+    .about-headquarters-section {
+      align-items: flex-start;
+      text-align: start; } }
+  @media only screen and (min-width: 760px) {
+    .about-headquarters-section .about-headquarters {
+      display: flex;
+      gap: 8rem; } }
   .about-headquarters-section .about-headquarters__title {
     color: #83888F;
     margin-bottom: 7.2rem; }

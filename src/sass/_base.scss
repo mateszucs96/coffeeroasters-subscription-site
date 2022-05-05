@@ -12,6 +12,10 @@ $fs-800: clamp(28px, calc(20px + 1.5vw), 48px);
 $fs-500: clamp(24px, calc(18px + 1.6vw), 40px);
 $fs-xxl: clamp(40px, calc(10px + 8.5vw), 150px);
 
+//breakpoints
+$mq-md: 760px;
+$mq-lg: 1200px;
+
 
 *,
 *::before,

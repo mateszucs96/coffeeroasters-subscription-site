@@ -13,7 +13,7 @@
     .hamburger-box {
         height: 1.5rem;
 
-        @media only screen and (min-width: 760px) {
+        @media only screen and (min-width: $mq-md) {
             display: none;
         }
     }
@@ -22,14 +22,14 @@
         display: none;
 
         .nav__list {
-            @media only screen and (min-width: 760px) {
+            @media only screen and (min-width: $mq-md) {
                 display: flex;
                 flex-direction: row;
                 gap: 3.3rem;
             }
         }
 
-        @media only screen and (min-width: 760px) {
+        @media only screen and (min-width: $mq-md) {
             display: flex;
 
         }
@@ -50,13 +50,13 @@
     margin: 0 1.6rem;
 
 
-    @media only screen and (min-width:760px) {
+    @media only screen and (min-width:$mq-md) {
         background-image: url('../assets/home/tablet/image-hero-coffeepress.jpg');
         align-items: flex-start;
         text-align: start;
     }
 
-    @media only screen and (min-width:1200px) {
+    @media only screen and (min-width:$mq-lg) {
         background-image: url('../assets/home/desktop/image-hero-coffeepress.jpg');
     }
 
@@ -85,7 +85,7 @@
 
     margin-top: 12rem;
 
-    @media only screen and (min-width: 760px) {}
+    @media only screen and (min-width: $mq-md) {}
 
 
 
@@ -101,26 +101,26 @@
         font-size: 4rem;
         line-height: 15rem;
 
-        @media only screen and (min-width: 760px) {
+        @media only screen and (min-width: $mq-md) {
 
             font-size: 9.6rem;
         }
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: $mq-lg) {
 
             font-size: 15rem;
         }
     }
 
     &__collections {
-        @media only screen and (min-width: 760px) {
+        @media only screen and (min-width: $mq-md) {
             display: flex;
             flex-direction: column;
             gap: 3rem;
             margin-top: -5em;
         }
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: $mq-lg) {
 
             flex-direction: row;
             max-width: 80%;
@@ -144,7 +144,7 @@
 
         // }
 
-        @media only screen and (min-width: 760px) and (max-width: 1200px) {
+        @media only screen and (min-width: 760px) and (max-width: $mq-lg) {
             flex-direction: row;
             justify-content: center;
             margin: 0 auto;
@@ -172,7 +172,7 @@
     width: 89%;
     margin: 0 auto;
 
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: $mq-lg) {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr);
         gap: 3rem;
@@ -197,7 +197,7 @@
 
         width: 100%;
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: $mq-lg) {
             grid-row: 1 / 4;
             grid-column: 1 / 4;
         }
@@ -227,7 +227,7 @@
         grid-row: 3/ span 2;
 
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: $mq-lg) {
             grid-column: 1;
 
             grid-row: 3 / span 2;
@@ -241,7 +241,7 @@
         grid-row: 5/ span 2;
 
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: $mq-lg) {
             grid-column: 2;
 
             grid-row: 3/ span 2;
@@ -254,7 +254,7 @@
         grid-row: 7 / span 2;
 
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: $mq-lg) {
             grid-row: 3 / span 2;
             grid-column: 3;
 
@@ -300,9 +300,9 @@
     margin: 12rem auto;
     text-align: center;
 
-    @media only screen and (min-width: 760px) {}
+    @media only screen and (min-width: $mq-md) {}
 
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: $mq-lg) {
         max-width: 80%;
 
     }
@@ -326,7 +326,7 @@
         align-items: center;
         text-align: center;
 
-        @media only screen and (min-width: 760px) {
+        @media only screen and (min-width: $mq-md) {
             flex-direction: row;
             gap: 1rem;
             justify-content: center;
@@ -334,7 +334,7 @@
             text-align: start;
         }
 
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (min-width: $mq-lg) {
             gap: 9rem;
         }
 
