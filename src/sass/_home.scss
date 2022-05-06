@@ -1,6 +1,7 @@
+@import "mixins";
+
 .header {
-    display: flex;
-    justify-content: space-between;
+    @include flex-content($justify: space-between);
     margin-bottom: 4rem;
     margin-top: 3.2rem;
     padding: 0 1.6rem;
@@ -23,31 +24,27 @@
 
         .nav__list {
             @media only screen and (min-width: $mq-md) {
-                display: flex;
-                flex-direction: row;
+                @include flex-content($direction: row);
                 gap: 3.3rem;
             }
         }
 
         @media only screen and (min-width: $mq-md) {
             display: flex;
-
         }
     }
 }
 
 .header-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-content($direction: column, $align: center);
     text-align: center;
     background-image: url('./assets/home/mobile/image-hero-coffeepress.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: $clr-light;
+    @include center-content($border-radius: 1rem);
     padding: 10rem 8%;
-    border-radius: 1rem;
-    margin: 0 1.6rem;
+
 
 
     @media only screen and (min-width:$mq-md) {
@@ -114,14 +111,12 @@
 
     &__collections {
         @media only screen and (min-width: $mq-md) {
-            display: flex;
-            flex-direction: column;
+            @include flex-content($direction: column);
             gap: 3rem;
             margin-top: -5em;
         }
 
         @media only screen and (min-width: $mq-lg) {
-
             flex-direction: row;
             max-width: 80%;
             margin-left: auto;
@@ -133,9 +128,7 @@
     }
 
     .collection {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex-content($direction: column, $align: center);
         margin-bottom: 4.8rem;
 
         // @media only screen and (min-width: 1200px) {
@@ -157,20 +150,11 @@
 
 }
 
-// .collection-section__collections {
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-basis: min-content;
-// }
-
-
 .commercial-section {
     display: grid;
     grid-template-rows: repeat(8, 1fr);
-
     gap: 1.5rem;
-    width: 89%;
-    margin: 0 auto;
+    @include center-content();
 
     @media only screen and (min-width: $mq-lg) {
         grid-template-rows: repeat(4, 1fr);
@@ -296,15 +280,13 @@
 }
 
 .details-section {
-    width: 89%;
-    margin: 12rem auto;
+    @include center-content(12rem);
     text-align: center;
 
     @media only screen and (min-width: $mq-md) {}
 
     @media only screen and (min-width: $mq-lg) {
         max-width: 80%;
-
     }
 
 
@@ -320,18 +302,14 @@
     }
 
     .details-main {
-        display: flex;
-        flex-direction: column;
         gap: 5.6rem;
-        align-items: center;
         text-align: center;
+        @include flex-content($direction: column, $align: center);
 
         @media only screen and (min-width: $mq-md) {
-            flex-direction: row;
             gap: 1rem;
-            justify-content: center;
-            align-items: stretch;
             text-align: start;
+            @include flex-content($direction: row, $justify:center, $align: stretch);
         }
 
         @media only screen and (min-width: $mq-lg) {

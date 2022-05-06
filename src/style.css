@@ -84,9 +84,10 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   color: #FEFCF7;
-  padding: 10rem 8%;
+  width: 89%;
+  margin: 0 auto;
   border-radius: 1rem;
-  margin: 0 1.6rem; }
+  padding: 10rem 8%; }
   @media only screen and (min-width: 760px) {
     .header-section {
       background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
@@ -155,7 +156,8 @@ p {
   grid-template-rows: repeat(8, 1fr);
   gap: 1.5rem;
   width: 89%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  border-radius: 0rem; }
   @media only screen and (min-width: 1200px) {
     .commercial-section {
       grid-template-rows: repeat(4, 1fr);
@@ -234,6 +236,7 @@ p {
 .details-section {
   width: 89%;
   margin: 12rem auto;
+  border-radius: 0rem;
   text-align: center; }
   @media only screen and (min-width: 1200px) {
     .details-section {
@@ -245,18 +248,19 @@ p {
       font-size: 2.4rem;
       line-height: 3.2rem; }
   .details-section .details-main {
+    gap: 5.6rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 5.6rem;
-    align-items: center;
-    text-align: center; }
+    align-items: center; }
     @media only screen and (min-width: 760px) {
       .details-section .details-main {
-        flex-direction: row;
         gap: 1rem;
-        justify-content: center;
+        text-align: start;
+        display: flex;
+        flex-direction: row;
         align-items: stretch;
-        text-align: start; } }
+        justify-content: center; } }
     @media only screen and (min-width: 1200px) {
       .details-section .details-main {
         gap: 9rem; } }
@@ -284,15 +288,15 @@ p {
   color: #333D4B; }
 
 .about-header-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
   background-size: cover;
   background-position: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 89%;
-  border-radius: 10px;
   margin: 0 auto;
+  border-radius: 1rem;
   margin-bottom: 12rem; }
 
 .about-heading {
@@ -309,6 +313,7 @@ p {
 .about-commitment-section {
   width: 89%;
   margin: 0 auto;
+  border-radius: 0rem;
   max-width: 111rem; }
   @media only screen and (min-width: 760px) {
     .about-commitment-section {
@@ -336,10 +341,10 @@ p {
 .about-quality-section {
   display: grid;
   grid-template-rows: 0.5fr 0.5fr 1fr;
-  max-width: 89%;
+  width: 89%;
   margin: 12rem auto;
-  overflow: hidden;
-  border-radius: 10px; }
+  border-radius: 1rem;
+  overflow: hidden; }
   .about-quality-section .about-quality__heading,
   .about-quality-section .about-quality__content {
     grid-column: 1; }
@@ -372,11 +377,12 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 89%;
-  margin: 0 auto;
   margin-bottom: 12rem;
   text-align: center;
-  max-width: 104.5rem; }
+  max-width: 104.5rem;
+  width: 89%;
+  margin: 0 auto;
+  border-radius: 0rem; }
   @media only screen and (min-width: 760px) {
     .about-headquarters-section {
       align-items: flex-start;
@@ -398,17 +404,17 @@ p {
   margin-bottom: 8rem; }
 
 .plan-header-section {
+  background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg");
+  background-size: cover;
+  padding: 10rem 2.4rem 13rem 2.4rem;
+  color: #FEFCF7;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("../assets/plan/mobile/image-hero-blackcup.jpg");
-  background-size: cover;
   width: 89%;
-  border-radius: 10px;
   margin: 0 auto;
-  padding: 10rem 2.4rem 13rem 2.4rem;
-  color: #FEFCF7;
-  text-align: center; }
+  border-radius: 1rem; }
   .plan-header-section .plan-heading__title {
     margin-bottom: 2.2rem;
     font-size: clamp(40px, calc(29px + 2.9vw), 72px);
@@ -426,17 +432,17 @@ p {
 
 .accordion-section {
   width: 89%;
-  border-radius: 1rem;
   margin: 0 auto;
+  border-radius: 1rem;
   margin-bottom: 12rem; }
   .accordion-section .accordion:not(:last-child) {
     margin-bottom: 9.6rem; }
   .accordion-section .accordion__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 3.2rem;
-    cursor: pointer; }
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
     .accordion-section .accordion__header .question {
       color: #83888F;
       font-size: clamp(24px, calc(18px + 1.6vw), 40px);

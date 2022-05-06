@@ -1,13 +1,11 @@
+@import "mixins";
+
 .about-header-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-image: url('../assets/about/mobile/image-hero-whitecup.jpg');
     background-size: cover;
     background-position: top;
-    width: 89%;
-    border-radius: 10px;
-    margin: 0 auto;
+    @include flex-content($direction: column, $align: center);
+    @include center-content($border-radius: 1rem);
     margin-bottom: 12rem;
 }
 
@@ -29,19 +27,15 @@
 }
 
 .about-commitment-section {
-    width: 89%;
-    margin: 0 auto;
+    @include center-content();
     max-width: 111rem;
 
     @media only screen and (min-width:$mq-md) {
-        display: flex;
-        justify-content: space-between;
+        @include flex-content($justify: space-between);
         gap: 6.9rem;
     }
 
     .about-commitment__header {
-
-
         img {
             border-radius: 10px;
             // height: 40rem;
@@ -74,10 +68,9 @@
 .about-quality-section {
     display: grid;
     grid-template-rows: 0.5fr 0.5fr 1fr;
-    max-width: 89%;
-    margin: 12rem auto;
+    @include center-content(12rem, 1rem);
     overflow: hidden;
-    border-radius: 10px;
+
 
 
     .about-quality__heading,
@@ -94,11 +87,7 @@
         padding: 14rem 2.4rem 6rem 2.4rem;
         border-radius: 1rem;
         color: $clr-light;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
+        @include flex-content($direction: column, $justify: flex-end);
 
         .about-quality__title {
             margin-bottom: 2.4rem;
@@ -126,14 +115,11 @@
 }
 
 .about-headquarters-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 89%;
-    margin: 0 auto;
+    @include flex-content($direction: column, $align: center);
     margin-bottom: 12rem;
     text-align: center;
     max-width: 104.5rem;
+    @include center-content();
 
     @media only screen and (min-width: $mq-md) {
         align-items: flex-start;

@@ -1,0 +1,12 @@
+@mixin flex-content($direction: null, $justify: null, $align: null) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin center-content($margin-top: 0, $border-radius: 0rem) {
+    width: 89%;
+    margin: $margin-top auto;
+    border-radius: $border-radius;
+}
