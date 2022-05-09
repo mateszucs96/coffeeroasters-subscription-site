@@ -2,9 +2,8 @@
 
 .header {
     @include flex-content($justify: space-between);
-    margin-bottom: 4rem;
-    margin-top: 3.2rem;
-    padding: 0 1.6rem;
+    max-width: 89%;
+    margin: 4rem auto 3.2rem auto;
 
     .logo-box .logo {
         height: 1.75rem;

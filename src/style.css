@@ -54,9 +54,8 @@ p {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 4rem;
-  margin-top: 3.2rem;
-  padding: 0 1.6rem; }
+  max-width: 89%;
+  margin: 4rem auto 3.2rem auto; }
   .header .logo-box .logo {
     height: 1.75rem; }
   .header .hamburger-box {
@@ -93,7 +92,7 @@ p {
       background-image: url("../assets/home/tablet/image-hero-coffeepress.jpg");
       align-items: flex-start;
       text-align: start; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1280px) {
     .header-section {
       background-image: url("../assets/home/desktop/image-hero-coffeepress.jpg"); } }
   .header-section .heading-primary {
@@ -122,7 +121,7 @@ p {
     @media only screen and (min-width: 760px) {
       .collection-section__heading {
         font-size: 9.6rem; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1280px) {
       .collection-section__heading {
         font-size: 15rem; } }
   @media only screen and (min-width: 760px) {
@@ -131,7 +130,7 @@ p {
       flex-direction: column;
       gap: 3rem;
       margin-top: -5em; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1280px) {
     .collection-section__collections {
       flex-direction: row;
       max-width: 80%;
@@ -143,7 +142,7 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 4.8rem; }
-    @media only screen and (min-width: 760px) and (max-width: 1200px) {
+    @media only screen and (min-width: 760px) and (max-width: 1280px) {
       .collection-section .collection {
         flex-direction: row;
         justify-content: center;
@@ -190,7 +189,7 @@ p {
     max-width: 85%; }
     .commercial-section .commercial-cards .commercial-card {
       width: 100%; }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1280px) {
       .commercial-section .commercial-cards {
         flex-direction: row;
         grid-row: 2 / span 2; } }
@@ -234,7 +233,7 @@ p {
     @media only screen and (min-width: 760px) {
       .details-section .line {
         display: flex; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1280px) {
       .details-section .line {
         display: flex;
         margin-right: -9rem; } }
@@ -266,7 +265,7 @@ p {
         flex-direction: row;
         align-items: stretch;
         justify-content: start; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1280px) {
       .details-section .details-main {
         gap: 9rem; } }
     .details-section .details-main__content {
@@ -341,7 +340,8 @@ p {
     @media only screen and (min-width: 760px) {
       .about-commitment-section .about-commitment__content {
         flex-basis: 60%;
-        align-self: center; } }
+        align-self: center;
+        text-align: start; } }
 
 .about-quality-section {
   display: grid;
@@ -362,16 +362,34 @@ p {
     color: #FEFCF7;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-end; }
+    @media only screen and (min-width: 1280px) {
+      .about-quality-section .about-quality__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: start;
+        padding: 9rem 5% 0rem; } }
     .about-quality-section .about-quality__content .about-quality__title {
-      margin-bottom: 2.4rem; }
+      margin-bottom: 2.4rem;
+      max-width: 54rem; }
     .about-quality-section .about-quality__content .about-quality__description {
-      opacity: 0.8; }
+      opacity: 0.8;
+      max-width: 54rem; }
   .about-quality-section .about-quality__heading {
     max-width: 85%;
     z-index: 10;
     grid-row: 1/ span 2;
     place-self: center; }
+    @media only screen and (min-width: 1280px) {
+      .about-quality-section .about-quality__heading {
+        place-self: end end;
+        grid-row: 2/ span 2;
+        margin-right: 5%;
+        position: relative;
+        bottom: 9rem; } }
     .about-quality-section .about-quality__heading img {
       display: block;
       max-width: 100%;
@@ -548,7 +566,7 @@ p {
   padding: 5.4rem;
   gap: 4.8rem;
   margin-bottom: 7.2rem; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1280px) {
     .footer {
       flex-direction: row;
       gap: 9rem;
@@ -567,7 +585,7 @@ p {
     justify-content: space-around;
     width: 12rem;
     align-items: center; }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1280px) {
       .footer__icons {
         margin-left: auto; } }
 

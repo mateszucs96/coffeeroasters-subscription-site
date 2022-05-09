@@ -80,11 +80,13 @@
   </section>
 
   <section class="about-quality-section">
-    <div class="about-quality__heading">
-      <img src="./assets/about/mobile/image-quality.jpg" alt="quality-image">
-    </div>
-    <div class="about-quality__content">
+    <picture class="about-quality__heading">
+      <source media="(min-width:760px) and (max-width:1280px)" srcset="./assets/about/tablet/image-quality.jpg">
+      <source media="(min-width:1280px)" srcset="./assets/about/desktop/image-quality.jpg">
+      <img src="./assets/about/mobile/image-quality.jpg" alt="Flowers">
+    </picture>
 
+    <div class="about-quality__content">
       <h2 class="about-quality__title">
         Uncompromising quality
       </h2>

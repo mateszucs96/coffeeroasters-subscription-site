@@ -15,6 +15,8 @@
     padding: 11rem 2.4rem 8.7rem 2.4rem;
     text-align: center;
 
+
+
     &__title {
         font-size: $fs-700;
         line-height: $fs-800;
@@ -23,6 +25,9 @@
 
     &__content {
         opacity: 0.8;
+
+
+
     }
 }
 
@@ -61,6 +66,7 @@
         @media only screen and (min-width:$mq-md) {
             flex-basis: 60%;
             align-self: center;
+            text-align: start;
         }
     }
 }
@@ -87,14 +93,24 @@
         padding: 14rem 2.4rem 6rem 2.4rem;
         border-radius: 1rem;
         color: $clr-light;
-        @include flex-content($direction: column, $justify: flex-end);
+        @include flex-content($direction: column, $justify: flex-end, $align: center);
+
+        @media only screen and (min-width: $mq-lg) {
+            @include flex-content($direction: column, $justify: flex-start, $align: flex-start);
+            text-align: start;
+            padding: 9rem 5% 0rem;
+        }
+
+
 
         .about-quality__title {
             margin-bottom: 2.4rem;
+            max-width: 54rem;
         }
 
         .about-quality__description {
             opacity: 0.8;
+            max-width: 54rem;
         }
     }
 
@@ -104,6 +120,13 @@
         grid-row: 1/ span 2;
         place-self: center;
 
+        @media only screen and (min-width: $mq-lg) {
+            place-self: end end;
+            grid-row: 2/ span 2;
+            margin-right: 5%;
+            position: relative;
+            bottom: 9rem;
+        }
 
         img {
             display: block;
