@@ -5,7 +5,7 @@
     color: $clr-light;
     text-align: center;
     @include flex-content($direction: column, $align: center);
-    @include center-content($border-radius:1rem);
+    @include center-content($border-radius: 1rem);
 
 
     .plan-heading {
@@ -33,10 +33,14 @@
             color: $clr-light;
         }
     }
+
+    .circle.plan {
+        background-color: transparent;
+    }
 }
 
 .accordion-section {
-    @include center-content($border-radius:1rem);
+    @include center-content($border-radius: 1rem);
     margin-bottom: 12rem;
 
     .accordion:not(:last-child) {

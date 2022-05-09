@@ -223,28 +223,6 @@ p {
     .details-section {
       text-align: start;
       max-width: calc(89% * 0.85); } }
-  .details-section .line {
-    display: none;
-    height: 2px;
-    background-color: #FDD6BA;
-    max-width: 76rem;
-    margin-right: -1rem;
-    align-items: center; }
-    @media only screen and (min-width: 760px) {
-      .details-section .line {
-        display: flex; } }
-    @media only screen and (min-width: 1280px) {
-      .details-section .line {
-        display: flex;
-        margin-right: -9rem; } }
-    .details-section .line .circle {
-      height: 3.1rem;
-      width: 3.1rem;
-      border-radius: 100px;
-      background-color: white;
-      border: 2px solid #0E8784; }
-  .details-section .line3 {
-    height: 0px; }
   .details-section .details-header {
     color: #83888F;
     margin-bottom: 8rem; }
@@ -290,6 +268,53 @@ p {
 
 .details-main__content__description {
   color: #333D4B; }
+
+.line3 {
+  height: 2px; }
+
+.line-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px; }
+
+.line {
+  display: none;
+  height: 2px;
+  background-color: #FDD6BA;
+  max-width: 76rem;
+  margin-right: -1rem;
+  align-items: center; }
+  @media only screen and (min-width: 760px) {
+    .line {
+      display: flex; } }
+  @media only screen and (min-width: 1280px) {
+    .line {
+      display: flex;
+      margin-right: -9rem; } }
+
+.circle {
+  height: 3.1rem;
+  width: 3.1rem;
+  border-radius: 100px;
+  background-color: white;
+  border: 2px solid #0E8784;
+  display: flex; }
+
+.line {
+  display: none;
+  height: 2px;
+  position: relative;
+  top: 51px;
+  margin-left: 1.55rem;
+  margin-right: 25rem;
+  max-width: 740px; }
+  @media only screen and (min-width: 760px) {
+    .line {
+      display: block; } }
+  @media only screen and (min-width: 1280px) {
+    .line {
+      display: block; } }
 
 .about-header-section {
   background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
@@ -452,6 +477,8 @@ p {
     color: #FEFCF7; }
   .plan-details .details-main__content__description {
     color: #FEFCF7; }
+  .plan-details .circle.plan {
+    background-color: transparent; }
 
 .accordion-section {
   width: 89%;
