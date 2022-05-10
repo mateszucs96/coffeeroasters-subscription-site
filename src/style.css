@@ -305,12 +305,26 @@ p {
   width: 89%;
   margin: 0 auto;
   border-radius: 1rem;
-  margin-bottom: 12rem; }
+  margin-bottom: 12rem;
+  padding: 11rem 8%; }
+  @media only screen and (min-width: 760px) {
+    .about-header-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-image: url("../assets/about/tablet/image-hero-whitecup.jpg"); } }
+  @media only screen and (min-width: 1280px) {
+    .about-header-section {
+      background-image: url("../assets/about/desktop/image-hero-whitecup.jpg"); } }
 
 .about-heading {
   color: #FEFCF7;
   padding: 11rem 2.4rem 8.7rem 2.4rem;
   text-align: center; }
+  @media only screen and (min-width: 760px) {
+    .about-heading {
+      text-align: start;
+      max-width: 44.5rem; } }
   .about-heading__title {
     font-size: clamp(28px, calc(20px + 1.5vw), 40px);
     line-height: clamp(28px, calc(20px + 1.5vw), 48px);
@@ -442,10 +456,23 @@ p {
   width: 89%;
   margin: 0 auto;
   border-radius: 1rem; }
-  .plan-header-section .plan-heading__title {
-    margin-bottom: 2.2rem;
-    font-size: clamp(40px, calc(29px + 2.9vw), 72px);
-    line-height: clamp(40px, calc(29px + 2.9vw), 72px); }
+  @media only screen and (min-width: 760px) {
+    .plan-header-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg");
+      padding: 11rem 8%;
+      text-align: start; } }
+  @media only screen and (min-width: 1280px) {
+    .plan-header-section {
+      background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg"); } }
+  .plan-header-section .plan-heading {
+    max-width: 48.5rem; }
+    .plan-header-section .plan-heading__title {
+      margin-bottom: 2.2rem;
+      font-size: clamp(40px, calc(29px + 2.9vw), 72px);
+      line-height: clamp(40px, calc(29px + 2.9vw), 72px); }
 
 .plan-details {
   width: 100%;

@@ -7,12 +7,27 @@
     @include flex-content($direction: column, $align: center);
     @include center-content($border-radius: 1rem);
 
+    @media only screen and (min-width:$mq-md) {
+        @include flex-content($direction: column, $align: flex-start);
+        background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg");
+        padding: 11rem 8%;
+        text-align: start;
+    }
+
+    @media only screen and (min-width:$mq-lg) {
+
+        background-image: url("../assets/plan/desktop/image-hero-blackcup.jpg");
+    }
+
 
     .plan-heading {
+        max-width: 48.5rem;
+
         &__title {
             margin-bottom: 2.2rem;
             font-size: $fs-900;
             line-height: $fs-900;
+
         }
     }
 }

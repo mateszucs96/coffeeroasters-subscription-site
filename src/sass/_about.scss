@@ -7,6 +7,17 @@
     @include flex-content($direction: column, $align: center);
     @include center-content($border-radius: 1rem);
     margin-bottom: 12rem;
+    padding: 11rem 8%;
+
+    @media only screen and (min-width:$mq-md) {
+        @include flex-content($direction: column, $align: flex-start);
+        background-image: url('../assets/about/tablet/image-hero-whitecup.jpg');
+    }
+
+    @media only screen and (min-width:$mq-lg) {
+
+        background-image: url('../assets/about/desktop/image-hero-whitecup.jpg');
+    }
 }
 
 .about-heading {
@@ -15,6 +26,11 @@
     padding: 11rem 2.4rem 8.7rem 2.4rem;
     text-align: center;
 
+    @media only screen and (min-width:$mq-md) {
+        text-align: start;
+        max-width: 44.5rem;
+
+    }
 
 
     &__title {
