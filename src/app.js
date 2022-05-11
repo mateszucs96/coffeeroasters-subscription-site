@@ -76,7 +76,7 @@ class App {
             //remove bg
             Array.from(e.target.closest('.answer').parentNode.children).forEach(el => el.style.backgroundColor = '');
             // add bg
-            e.target.closest('.answer').style.backgroundColor = 'red';
+            e.target.closest('.answer').style.backgroundColor = '#0E8784';
             // selected answer
             const clicked = e.target.closest('.answer').parentNode.classList[1];
             // pass it to the 'sub' object
