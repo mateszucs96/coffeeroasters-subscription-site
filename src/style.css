@@ -628,6 +628,10 @@ p {
   .modal__summary--content {
     color: #83888F; }
 
+.modal::backdrop {
+  background-color: #FEFCF7;
+  opacity: 0.2; }
+
 .navigation-menu {
   display: none;
   flex-direction: column;

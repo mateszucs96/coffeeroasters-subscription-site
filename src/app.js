@@ -55,6 +55,9 @@ class App {
         this.accordionHeader.forEach(el => el.addEventListener('click', this.handleAccordion))
         this.answers.forEach(el => el.addEventListener('click', this.handleAnswers.bind(this)))
         this.openModal.addEventListener('click', () => {
+
+
+
             this.modal.showModal();
 
             if (sub.quantity === '250g') {
@@ -89,17 +92,17 @@ class App {
         // update summary textcontent based on the choosen answer
         this.placesholders.forEach((el, i) => {
             el.textContent = arr[i];
-            // if (el.textContent !== '_____') {
-            //     // this.steps.children[i].children[0].classList.add('completed');
+            if (el.textContent !== '_____') {
+                this.steps.children[i].children[0].classList.add('completed');
 
-            // }
+            }
         });
         this.modalPlaceholders.forEach((el, i) => {
             el.textContent = arr[i];
-            // if (el.textContent !== '_____') {
-            //     // this.steps.children[i].children[0].classList.add('completed');
+            if (el.textContent !== '_____') {
+                this.steps.children[i].children[0].classList.add('completed');
 
-            // }
+            }
         });
         // if capsule is choosen...
         if (arr[0] === 'Capsule') {

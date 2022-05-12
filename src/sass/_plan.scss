@@ -286,3 +286,8 @@
 
     }
 }
+
+.modal::backdrop {
+    background-color: $clr-light;
+    opacity: 0.2;
+}
