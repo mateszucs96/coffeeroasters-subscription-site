@@ -6,6 +6,22 @@ const sub = {
     deliver: '_____',
 }
 
+class Price {
+    constructor(week, halfMonth, month, howOften) {
+        this.week = week;
+        this.halfMonth = halfMonth;
+        this.month = month;
+        this.howOften = howOften;
+    }
+
+    multiplyPrice() {
+        if (this.howOften === 'Every week') return this.week * 4;
+        if (this.howOften === 'Every 2 weeks') return this.halfMonth * 2;
+        if (this.howOften === 'Every month') return this.month;
+    }
+
+}
+
 
 class Plan {
     constructor(how = '', type = '', amount = '', grind = '', often = '') {
@@ -32,6 +48,7 @@ class App {
     openModal = document.querySelector('.btn--modal');
     closeModal = document.querySelector('.btn--close');
     modalPlaceholders = document.querySelectorAll('.modal-placeholders');
+    price = document.querySelector('.price');
 
     constructor() {
         this.hamburger.addEventListener('click', this.openMenu.bind(this))
@@ -39,6 +56,21 @@ class App {
         this.answers.forEach(el => el.addEventListener('click', this.handleAnswers.bind(this)))
         this.openModal.addEventListener('click', () => {
             this.modal.showModal();
+
+            if (sub.quantity === '250g') {
+                console.log(sub.deliver)
+                const prices = new Price(7.2, 9.6, 12, sub.deliver)
+                this.price.textContent = prices.multiplyPrice()
+            }
+            if (sub.quantity === '500g') {
+                const prices = new Price(13, 17.5, 22, sub.deliver)
+                this.price.textContent = prices.multiplyPrice()
+            }
+            if (sub.quantity === '1000g') {
+                const prices = new Price(22, 32, 42, sub.deliver)
+                this.price.textContent = prices.multiplyPrice()
+            }
+
         });
         this.closeModal.addEventListener('click', () => {
             this.modal.close();
