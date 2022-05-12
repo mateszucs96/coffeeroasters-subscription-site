@@ -49,10 +49,11 @@ class App {
         });
         // if capsule is choosen...
         if (arr[0] === 'Capsule') {
+            console.log(this.accordionHeader[3])
             // ...'using' is before the first placeholder 
             this.how.textContent = 'using';
             //... 'Want us to grind them?' accordion disabled
-            this.accordionHeader[3].children[0].style.color = '#C1C3C7';
+            this.accordionHeader[3].style.opacity = '0.5';
             this.accordionHeader[3].removeEventListener('click', this.handleAccordion);
 
         }
@@ -62,7 +63,7 @@ class App {
             this.how.textContent = 'as';
             //... 'Want us to grind them?' accordion enabled
             this.accordionHeader[3].addEventListener('click', this.handleAccordion)
-            this.accordionHeader[3].children[0].style.color = '#83888F';
+            this.accordionHeader[3].style.opacity = '1';
 
         }
 

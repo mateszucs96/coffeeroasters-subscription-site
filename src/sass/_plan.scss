@@ -137,9 +137,14 @@
             }
 
             .icon-arrow {
+                color: #0E8784;
                 width: 1.8rem;
                 height: 1.2rem;
 
+            }
+
+            .icon-arrow:hover {
+                color: #66D2CF;
             }
 
             .rotate {
@@ -162,6 +167,7 @@
                 padding: 2.4rem;
                 background-color: #F4F1EB;
                 border-radius: .8rem;
+                cursor: pointer;
 
                 @media only screen and (min-width: $mq-md) {
                     width: 22rem;

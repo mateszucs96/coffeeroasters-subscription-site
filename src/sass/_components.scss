@@ -84,8 +84,10 @@
     &__icons {
         display: flex;
         justify-content: space-around;
+
         width: 12rem;
         align-items: center;
+        gap: 2rem;
 
         @media only screen and (min-width: $mq-lg) {
             margin-left: auto;
@@ -93,8 +95,14 @@
         }
     }
 
+    &__icon {
+        color: #FEFCF7;
+        cursor: pointer;
+    }
 
-
+    &__icon:hover {
+        color: $clr-orange;
+    }
 }
 
 .nav__link {
@@ -122,9 +130,9 @@
 }
 
 .footer__logo {
-    height: 100%;
-    width: 100%;
-    fill: red;
+    height: 2.6rem;
+    max-width: 23.5rem;
+    color: #ffffff;
 }
 
 .footer__logo--logo {
