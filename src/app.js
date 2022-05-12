@@ -1,9 +1,9 @@
 const sub = {
-    pref: '',
-    type: '',
-    quantity: '',
-    grind: '',
-    deliver: '',
+    pref: '_____',
+    type: '_____',
+    quantity: '_____',
+    grind: '_____',
+    deliver: '_____',
 }
 
 
@@ -25,12 +25,24 @@ class App {
     answers = document.querySelectorAll('.answers');
     summaryContent = document.querySelector('.summary--content');
     placesholders = document.querySelectorAll('.placeholders');
-    how = document.querySelector('.how');
+    how = document.querySelectorAll('.how');
+    grind = document.querySelectorAll('.grind-text');
+    steps = document.querySelector('.steps-container');
+    modal = document.querySelector('.modal');
+    openModal = document.querySelector('.btn--modal');
+    closeModal = document.querySelector('.btn--close');
+    modalPlaceholders = document.querySelectorAll('.modal-placeholders');
 
     constructor() {
         this.hamburger.addEventListener('click', this.openMenu.bind(this))
         this.accordionHeader.forEach(el => el.addEventListener('click', this.handleAccordion))
         this.answers.forEach(el => el.addEventListener('click', this.handleAnswers.bind(this)))
+        this.openModal.addEventListener('click', () => {
+            this.modal.showModal();
+        });
+        this.closeModal.addEventListener('click', () => {
+            this.modal.close();
+        })
     };
     openMenu(e) {
         e.target.attributes.src.nodeValue === './assets/shared/mobile/icon-close.svg'
@@ -45,26 +57,39 @@ class App {
         // update summary textcontent based on the choosen answer
         this.placesholders.forEach((el, i) => {
             el.textContent = arr[i];
+            // if (el.textContent !== '_____') {
+            //     // this.steps.children[i].children[0].classList.add('completed');
 
+            // }
+        });
+        this.modalPlaceholders.forEach((el, i) => {
+            el.textContent = arr[i];
+            // if (el.textContent !== '_____') {
+            //     // this.steps.children[i].children[0].classList.add('completed');
+
+            // }
         });
         // if capsule is choosen...
         if (arr[0] === 'Capsule') {
-            console.log(this.accordionHeader[3])
             // ...'using' is before the first placeholder 
-            this.how.textContent = 'using';
+            this.how.forEach(el => el.textContent = 'using');
             //... 'Want us to grind them?' accordion disabled
             this.accordionHeader[3].style.opacity = '0.5';
             this.accordionHeader[3].removeEventListener('click', this.handleAccordion);
-
+            this.grind.forEach(el => el.style.display = 'none');
+            this.steps.children[3].style.opacity = '0.2';
+            this.steps.children[3].style.cursor = 'default';
         }
         // if others is choosen... 
         if (arr[0] === 'Filter' || arr[0] === 'Espresso') {
             // ... 'as' is before the first placeholder
-            this.how.textContent = 'as';
+            this.how.forEach(el => el.textContent = 'as');
             //... 'Want us to grind them?' accordion enabled
             this.accordionHeader[3].addEventListener('click', this.handleAccordion)
             this.accordionHeader[3].style.opacity = '1';
-
+            this.grind.forEach(el => el.style.display = 'inline');
+            this.steps.children[3].style.opacity = '0.5';
+            this.steps.children[3].style.cursor = 'pointer';
         }
 
     };

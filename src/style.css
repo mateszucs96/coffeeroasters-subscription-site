@@ -501,10 +501,10 @@ p {
     .plan-section .steps-container .step {
       display: flex;
       gap: 2.8rem; }
-      .plan-section .steps-container .step .completed {
-        color: #0E8784; }
       .plan-section .steps-container .step .step > *:hover {
         color: red; }
+    .plan-section .steps-container .completed {
+      color: #0E8784; }
     .plan-section .steps-container .step:hover {
       opacity: 0.7; }
     .plan-section .steps-container > * {
@@ -587,14 +587,17 @@ p {
       color: #ffffff;
       opacity: .5;
       text-transform: uppercase; }
-    .summary-section .summary .summary--content {
-      line-height: 4rem;
-      color: #ffffff; }
-      .summary-section .summary .summary--content .placeholders {
-        color: #0E8784; }
   .summary-section .btn {
     max-width: 21.7rem;
     margin: 0 auto; }
+
+.summary--content {
+  line-height: 4rem;
+  color: #ffffff; }
+
+.placeholders,
+.modal-placeholders {
+  color: #0E8784; }
 
 .plan-details {
   max-width: 100%; }
@@ -603,6 +606,27 @@ p {
       max-width: 89%; } }
   .plan-details .details-main .circle {
     background-color: transparent; }
+
+.modal {
+  border-radius: 1rem;
+  width: 89%;
+  max-width: 54rem;
+  margin: auto auto; }
+  .modal .heading {
+    background-color: #2C343E;
+    padding: 2.8rem 0; }
+    .modal .heading h4 {
+      margin: 0 auto;
+      width: 89%;
+      font-size: 2.8rem;
+      color: #ffffff; }
+  .modal__body {
+    width: 89%;
+    margin: 5.6rem auto; }
+    .modal__body .check-text {
+      color: #333D4B; }
+  .modal__summary--content {
+    color: #83888F; }
 
 .navigation-menu {
   display: none;
@@ -634,16 +658,19 @@ p {
   align-items: center;
   justify-content: center;
   background-color: #0E8784;
+  color: #FEFCF7;
   height: 5.6rem;
   width: 21.75rem;
   border-radius: .6rem;
-  border: none; }
-  .btn .btn-text {
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
-    font-size: 1.8rem;
-    line-height: 2.5rem;
-    color: #FEFCF7; }
+  border: none;
+  cursor: pointer; }
+
+.btn-text {
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #FEFCF7; }
 
 .btn:hover {
   background-color: #66D2CF; }

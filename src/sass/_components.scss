@@ -33,18 +33,22 @@
 .btn {
     @include flex-content($justify: center, $align: center);
     background-color: $clr-cyan;
+    color: $clr-light;
     height: 5.6rem;
     width: 21.75rem;
     border-radius: .6rem;
     border: none;
+    cursor: pointer;
 
-    .btn-text {
-        font-family: 'Fraunces', serif;
-        font-weight: 900;
-        font-size: 1.8rem;
-        line-height: 2.5rem;
-        color: $clr-light;
-    }
+
+}
+
+.btn-text {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: $clr-light;
 }
 
 .btn:hover {

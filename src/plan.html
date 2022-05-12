@@ -129,7 +129,7 @@
   <section class="plan-section">
     <aside class="steps-container">
       <div class="step">
-        <h4 class="step-number completed">01</h4>
+        <h4 class="step-number">01</h4>
         <h4 class="steps"> Preferences</h4>
       </div>
       <div class="step">
@@ -341,13 +341,13 @@
           <h4 class="summary--content">
             “I drink coffee <span class="how"></span> <span class="placeholders">_____</span>, with a <span
               class="placeholders">_____</span> type of
-            bean. <span class="placeholders">_____</span> ground ala
-            <span class="placeholders">_____</span>,
+            bean. <span class="placeholders">_____</span> <span class="grind-text">ground ala
+              <span class="placeholders">_____</span>,</span>
             sent to me <span class="placeholders">_____</span>.”
           </h4>
         </div>
-        <div class="btn">
-          <a href="./plan.html" class="btn-text">Create your plan</a>
+        <div class="btn btn-text btn--modal">
+          Create your plan
         </div>
       </section>
     </div>
@@ -356,17 +356,39 @@
 
 
   <!-- Modal -->
-  <!-- Order Summary
+  <dialog class="modal">
+    <header class="heading">
+      <h4>
+        Order Summary
+      </h4>
+    </header>
 
-  “I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
-  sent to me _____.”
 
-  Is this correct? You can proceed to checkout or go back to plan selection if something
-  is off. Subscription discount codes can also be redeemed at the checkout.
+    <div class="modal__body">
+      <div class="main">
+        <h4 class="summary--content modal__summary--content">
+          “I drink coffee <span class="how"></span> <span class="modal-placeholders">_____</span>, with a
+          <span class="modal-placeholders">_____</span> type of
+          bean. <span class="modal-placeholders">_____</span> <span class="grind-text">ground ala
+            <span class="modal-placeholders">_____</span>,</span>
+          sent to me <span class="modal-placeholders">_____</span>.”
+        </h4>
 
-  $_____/month
+        <p class="check-text">
+          Is this correct? You can proceed to checkout or go back to plan selection if something
+          is off. Subscription discount codes can also be redeemed at the checkout.
+        </p>
 
-  Checkout -->
+        <div class="btn btn-text btn--close">
+          $_____/month - Checkout
+        </div>
+      </div>
+
+
+    </div>
+
+  </dialog>
+
   <!-- End modal -->
   <footer class="footer">
     <svg class="footer__logo">

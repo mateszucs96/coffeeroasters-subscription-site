@@ -12,6 +12,7 @@
         background-image: url("../assets/plan/tablet/image-hero-blackcup.jpg");
         padding: 11rem 8%;
         text-align: start;
+
     }
 
     @media only screen and (min-width:$mq-lg) {
@@ -75,13 +76,15 @@
             display: flex;
             gap: 2.8rem;
 
-            .completed {
-                color: $clr-cyan;
-            }
+
 
             .step>*:hover {
                 color: red;
             }
+        }
+
+        .completed {
+            color: $clr-cyan;
         }
 
         .step:hover {
@@ -213,20 +216,25 @@
             text-transform: uppercase;
         }
 
-        .summary--content {
-            line-height: 4rem;
-            color: #ffffff;
 
-            .placeholders {
-                color: $clr-cyan;
-            }
-        }
     }
 
     .btn {
         max-width: 21.7rem;
         margin: 0 auto;
     }
+}
+
+.summary--content {
+    line-height: 4rem;
+    color: #ffffff;
+
+
+}
+
+.placeholders,
+.modal-placeholders {
+    color: $clr-cyan;
 }
 
 .plan-details {
@@ -241,6 +249,40 @@
         .circle {
             background-color: transparent;
         }
+
+    }
+}
+
+.modal {
+    border-radius: 1rem;
+    width: 89%;
+    max-width: 54rem;
+    margin: auto auto;
+
+    .heading {
+        background-color: #2C343E;
+        padding: 2.8rem 0;
+
+        h4 {
+            margin: 0 auto;
+            width: 89%;
+            font-size: 2.8rem;
+            color: #ffffff;
+        }
+    }
+
+    &__body {
+        width: 89%;
+        margin: 5.6rem auto;
+
+        .check-text {
+            color: $clr-grey-blue;
+        }
+    }
+
+    &__summary--content {
+        color: $clr-grey;
+
 
     }
 }
