@@ -590,6 +590,8 @@ p {
   .summary-section .btn {
     max-width: 21.7rem;
     margin: 0 auto; }
+  .summary-section .btn--modal {
+    background-color: #E2DEDB; }
 
 .summary--content {
   line-height: 4rem;

@@ -1,9 +1,5 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.navigation-menu');
-
-
-
-
 const openMenu = (e) => {
     e.target.attributes.src.nodeValue === './assets/shared/mobile/icon-close.svg'
         ? e.target.attributes.src.nodeValue = './assets/shared/mobile/icon-hamburger.svg'

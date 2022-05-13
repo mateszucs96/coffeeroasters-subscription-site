@@ -4,6 +4,7 @@ const sub = {
     quantity: '_____',
     grind: '_____',
     deliver: '_____',
+    isCompleted: false
 }
 
 class Price {
@@ -55,7 +56,7 @@ class App {
         this.accordionHeader.forEach(el => el.addEventListener('click', this.handleAccordion))
         this.answers.forEach(el => el.addEventListener('click', this.handleAnswers.bind(this)))
         this.openModal.addEventListener('click', () => {
-
+            if (Object.values(sub).some(el => el === '_____')) return;
 
 
             this.modal.showModal();
@@ -126,7 +127,9 @@ class App {
             this.steps.children[3].style.opacity = '0.5';
             this.steps.children[3].style.cursor = 'pointer';
         }
-
+        if (arr.every(el => el !== '_____')) {
+            this.openModal.style.backgroundColor = '#0E8784';
+        }
     };
 
     // handling answers based on selection 
@@ -142,9 +145,26 @@ class App {
             const clicked = e.target.closest('.answer').parentNode.classList[1];
             // pass it to the 'sub' object
             sub[clicked] = e.target.closest('.answer').children[0].textContent.trim();
+
+
+
+            if (sub.pref === 'Capsule') {
+                sub.grind = null;
+            }
+            if (sub.pref !== 'Capsule' && clicked === 'pref') {
+                sub.grind = '_____'
+            }
+            if (sub.pref !== 'Capsule' && clicked === 'grind') {
+                sub.grind = e.target.closest('.answer').children[0].textContent.trim();
+            }
+
+
+            console.log(sub)
         };
         // create 'plan' instance based on 'sub' object
         const plan = new Plan(sub.pref, sub.type, sub.quantity, sub.grind, sub.deliver);
+
+
 
         // update summary section from 'plan'
         this.updateSummary(Object.values(plan));
