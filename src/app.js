@@ -4,7 +4,6 @@ const sub = {
     quantity: '_____',
     grind: '_____',
     deliver: '_____',
-    isCompleted: false
 }
 
 class Price {
