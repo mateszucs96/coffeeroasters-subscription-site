@@ -1,3 +1,5 @@
+'use strict';
+
 const sub = {
     pref: '_____',
     type: '_____',
