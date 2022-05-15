@@ -32,10 +32,13 @@ You as the User should be able to:
 
 ### Screenshot
 
-
+-Home-page
 ![Home-page](./src/assets/screenshots/home-page.png)
+-About-page
 ![About-page](./src/assets/screenshots/about-page.png)
+-Plan-page
 ![Plan-page](./src/assets/screenshots/plan-page.png)
+-Sbuscription-section
 ![Subscription-section](./src/assets/screenshots/subscription.png)
 
 ### Links
