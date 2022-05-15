@@ -96,14 +96,12 @@ class App {
             el.textContent = arr[i];
             if (el.textContent !== '_____') {
                 this.steps.children[i].children[0].classList.add('completed');
-
             }
         });
         this.modalPlaceholders.forEach((el, i) => {
             el.textContent = arr[i];
             if (el.textContent !== '_____') {
                 this.steps.children[i].children[0].classList.add('completed');
-
             }
         });
         // if capsule is choosen...
@@ -158,9 +156,6 @@ class App {
             if (sub.pref !== 'Capsule' && clicked === 'grind') {
                 sub.grind = e.target.closest('.answer').children[0].textContent.trim();
             }
-
-
-            console.log(sub)
         };
         // create 'plan' instance based on 'sub' object
         const plan = new Plan(sub.pref, sub.type, sub.quantity, sub.grind, sub.deliver);
