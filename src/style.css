@@ -215,6 +215,9 @@ p {
   color: #FEFCF7; }
 
 .details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 89%;
   margin: 12rem auto;
   border-radius: 0rem;
@@ -222,7 +225,8 @@ p {
   @media only screen and (min-width: 760px) {
     .details-section {
       text-align: start;
-      max-width: calc(89% * 0.85); } }
+      max-width: calc(89% * 0.85);
+      align-items: flex-start; } }
   .details-section .line-container {
     display: none; }
     @media only screen and (min-width: 760px) {
@@ -289,8 +293,7 @@ p {
 
 .details-main__content__title {
   color: #333D4B;
-  font-size: 2.8rem;
-  margin-right: 6rem; }
+  font-size: 2.8rem; }
 
 .details-main__content__description {
   color: #333D4B; }
